@@ -25,9 +25,6 @@
                 <a class="nav-link active text-black" href="#testimonial">Testimonial</a>
               </li>
               <li class="nav-item ms-4">
-                <a class="nav-link active text-black" href="daftarlayanan.html">Daftar Layanan</a>
-              </li>
-              <li class="nav-item ms-4">
                 <a class="nav-link active text-black" href="#contact">Kontak Kami</a>
               </li>
               <li class="nav-item ms-4">
