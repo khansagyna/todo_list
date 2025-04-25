@@ -9,5 +9,21 @@ class Todo extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['task'];
+    // Field yang bisa diisi massal (mass assignment)
+    protected $fillable = [
+        'task',
+        'user_id',
+        'is_done',
+    ];
+
+    // Cast tipe data untuk is_done ke boolean
+    protected $casts = [
+        'is_done' => 'boolean',
+    ];
+
+    // Relasi: satu tugas dimiliki oleh satu user
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
